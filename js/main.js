@@ -30,4 +30,22 @@ $(function () {
     }
   })
 
+
+  //media 
+
+  $('.burger, .owerlay').on('click', function (e) {
+    e.preventDefault()
+    if ($('.header__top').hasClass('header__top--open')) {
+      $('.header__top').removeClass('header__top--open');
+      $('.owerlay').removeClass('owerlay--show');
+      $('.burger').removeClass('burger--open');
+    }
+    else {
+      $('.header__top').addClass('header__top--open');
+      $('.owerlay').addClass('owerlay--show');
+      $('.burger').addClass('burger--open');
+    }
+
+  })
+
 })
